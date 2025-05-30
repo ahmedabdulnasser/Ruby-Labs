@@ -1,0 +1,80 @@
+[
+  {
+    "title": "New Book",
+    "author": "JJ Pierre",
+    "isbn": "123",
+    "count": 1
+  },
+  {
+    "title": "JK",
+    "author": "JJ",
+    "isbn": "12334",
+    "count": 1
+  },
+  {
+    "title": "1asdfadsf",
+    "author": "33",
+    "isbn": "3333",
+    "count": 1
+  },
+  {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "isbn": "978-0000000001",
+    "count": 1
+  },
+  {
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "isbn": "978-0000000002",
+    "count": 1
+  },
+  {
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "isbn": "978-0000000003",
+    "count": 1
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance",
+    "author": "Robert M. Pirsig",
+    "isbn": "978-0000000004",
+    "count": 1
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "978-0000000005",
+    "count": 1
+  },
+  {
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "978-0000000006",
+    "count": 1
+  },
+  {
+    "title": "The Odyssey",
+    "author": "Homer",
+    "isbn": "978-0000000007",
+    "count": 1
+  },
+  {
+    "title": "Kafka on the Shore",
+    "author": "Haruki Murakami",
+    "isbn": "978-0000000008",
+    "count": 1
+  },
+  {
+    "title": "Wuthering Heights",
+    "author": "Emily Brontë",
+    "isbn": "978-0000000009",
+    "count": 1
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "978-0000000010",
+    "count": 1
+  }
+]
