@@ -1,0 +1,5 @@
+2025-05-31 15:59:04 +0300 -- info -- Processing Transactions Ali transaction with value 10, John transaction with value 20, Ali transaction with value 300
+2025-05-31 15:59:04 +0300 -- info -- User Ali transaction with value 10
+2025-05-31 15:59:04 +0300 -- warning -- User Ali has 0 balance
+2025-05-31 15:59:04 +0300 -- error -- User John transaction with value 20 with reason User does not exist in the bank
+2025-05-31 15:59:04 +0300 -- error -- User Ali transaction with value 300 failed with reason: not enough balance
