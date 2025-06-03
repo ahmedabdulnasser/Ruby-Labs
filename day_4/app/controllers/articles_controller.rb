@@ -1,10 +1,11 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
   before_action :set_article, only: [:show, :edit, :update, :destroy, :report]
-  before_action :authorize_user!, only: [:edit, :update, :destroy]
+  before_action :authorize_edit, only: [:edit, :update]
+  # before_action :authorize_user!, only: [:edit, :update, :destroy]
 
   def index
-  @articles = Article.where(status: [nil, 'active'])
+    @articles = Article.where(status: [nil, 'active'])
   end
 
   def show
@@ -35,6 +36,7 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
+    authorize! :destroy, @article
     @article.destroy
     redirect_to articles_path, notice: 'Article deleted successfully.'
   end
@@ -53,9 +55,14 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-  def authorize_user!
-    redirect_to articles_path, alert: 'Not authorized.' unless @article.user == current_user
+
+  def authorize_edit
+    authorize! :edit, @article
   end
+
+  # def authorize_user!
+  #   redirect_to articles_path, alert: 'Not authorized.' unless @article.user == current_user
+  # end
 
   def article_params
     params.require(:article).permit(:title, :content, :image)

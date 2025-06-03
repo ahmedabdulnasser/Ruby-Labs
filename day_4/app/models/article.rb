@@ -8,9 +8,13 @@ class Article < ApplicationRecord
 
   private
   def archive_if_reported
+    self.reports_count ||= 0
     self.status = 'archived' if reports_count >= 3
   end
 
+  def set_default_status
+    self.status ||= 'active'
+  end
 
 
 end

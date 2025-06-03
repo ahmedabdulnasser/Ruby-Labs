@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # Devise routes for user authentication
   devise_for :users
-
+  root 'articles#index'
   # Authenticated users are redirected to the articles index page
   authenticated :user do
     root 'articles#index', as: :authenticated_root
@@ -20,4 +20,4 @@ Rails.application.routes.draw do
       post :report
     end
   end
-endw
+end

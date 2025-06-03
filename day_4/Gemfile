@@ -66,3 +66,4 @@ gem "devise", "~> 4.9"
 gem 'whenever', require: false
 
 gem "rake", "~> 13.3"
+gem 'cancancan'
